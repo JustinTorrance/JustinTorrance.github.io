@@ -1,262 +1,391 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <title>Static2</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <title>Static Comp 3</title>
 </head>
 <body>
-  <header>
-    <ul>
-      <li class="auctions-li"> <i class="fas fa-gavel"></i> AUCTIONS</li>
-      <li class="events-li"><i class="fas fa-list-ul"></i> EVENTS</li>
-      <li><i class="fas fa-users"></i> COMMUNITY</li>
-    </ul>
-    <div class="username-div">
-      <p class="username-p"><i class="fas fa-user-circle"></i>  Admin Username  <i class="fas fa-sort-down"></i></p>
-      <img class="logo" src="images/classicbids.png">
-    </div>
-  </header>
-  <h1>Auctions  </h1>
+  <aside>
+    <section class="profile-section">
+      <img class="profile-img" src="images/jt.jpg">
+      <p class="profile-user">Justin Torrance <i class="fas fa-angle-down"></i></p>
+    </section>
+    <nav class="nav-aside">
+      <section class="nav-section-main">
+        <p class="nav-title">Main</p>
+
+        <div class="nav-item">
+          <div class="icon-div">
+            <i class="fas fa-home"></i>
+          </div>
+          <p>HOME</p>
+        </div>
+
+        <div class="nav-item">
+          <div class="icon-div">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <p>JOBS</p>
+        </div>
+
+        <div class="nav-item">
+          <div class="icon-div">
+            <i class="fas fa-file-alt"></i>
+          </div>
+          <p>RESUMES</p>
+        </div>
+
+        <div class="nav-item">
+          <div class="icon-div">
+            <i class="fas fa-clipboard"></i>
+          </div>
+          <p>TASKS</p>
+        </div>
+
+        <div class="nav-item">
+          <div class="icon-div">
+            <i class="fas fa-calendar-alt"></i>
+          </div>
+          <p>CALENDAR</p>
+        </div>
+      </section>
+
+      <section class="nav-section-admin">
+        <p class="nav-title">Admin</p>
+        <div class="nav-item">
+          <div class="icon-div">
+            <i class="fas fa-user-friends"></i>
+          </div>
+          <p>USERS</p>
+        </div>
+        
+        <div class="nav-item">
+          <div class="icon-div">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <p>LOCATIONS</p>
+        </div>
+
+        <div class="nav-item">
+          <div class="icon-div">        
+            <i class="fas fa-sitemap"></i>
+          </div>
+          <p>WORKFLOWS</p>
+        </div>
+
+        <div class="nav-item job-boards">
+          <div class="icon-div">
+            <i class="fas fa-globe"></i>
+          </div>
+          <p>JOB BOARDS</p>
+        </div>
+
+        <div class="nav-item">
+          <div class="icon-div">        
+            <i class="fas fa-share-alt"></i>
+          </div>
+          <p>SOCIAL</p>
+        </div>
+      </section>
+
+      <section class="nav-section-categories">
+        <p class="nav-title">Categories</p>
+
+        <div class="nav-item">
+          <div class="icon-div">        
+            <i class="fas fa-check-square"></i>
+          </div>
+          <p>Administrative</p>
+        </div>
+
+        <div class="nav-item">
+          <div class="icon-div">        
+            <i class="fas fa-square blue-square"></i>
+          </div>
+          <p>Design</p>
+        </div>
+
+        <div class="nav-item">
+          <div class="icon-div">        
+            <i class="fas fa-square red-square"></i>
+          </div>
+          <p>Executive</p>
+        </div>
+
+        <div class="nav-item">
+          <div class="icon-div">        
+            <i class="fas fa-square green-square"></i>
+          </div> 
+          <p>Human Resources</p>
+        </div>
+      </section>
+    </nav>
+  </aside>
+
+
+
+
   <main>
-    <section class="box box1">
-      <article class="img-article img-article1">
-        <div class="bid-div">
-          <img class="bid-now-img" src="images/bid.png">
-          <div class="number-bids-div">
-            <p class="bids-p">BIDS</p>
-            <p class="number-bids-p">07</p>
-          </div>
+    <nav class="nav-search">
+      <article class="nav-search-article hamburger">
+        <i class="fas fa-caret-left" id="caret"></i>
+        <i class="fas fa-bars"></i>
+      </article>
+      <article class="nav-input-article nav-search-article">
+        <i class='fas fa-search'></i>
+        <input type="text" placeholder="Search for a job, task, or resume">
+      </article>
+      <article class="nav-search-article add-user">
+        <i class="fas fa-user-plus"></i>
+      </article>
+      <article class="nav-search-article calendar">
+        <i class="fas fa-calendar-plus"></i>
+      </article>
+      <article class="nav-search-article nine">
+        <i class="fas fa-th"></i>
+      </article> 
+    </nav>
+
+
+
+
+    <nav class="nav-dashboard">
+      <div class="dashboard-div">
+        <article class="nav-dashboard-article job-title-article">
+          <h1 class="job-title-h1">Customer Service Representative</h1>
+          <p><i class="fas fa-map-marker-alt"></i> Boulder, CO  -  <span class="preview">Preview this post</span></p>
+        </article>
+
+        <article class="nav-dashboard-article dashboard-btns-article">
+          <div class="open-btn"><i class="fas fa-circle"></i> OPEN</div>
+          <div class="btn"><i class="fas fa-bookmark"></i></div>
+          <div class="btn"><i class="fas fa-pen"></i></div>
+          <div class="btn"><i class="fas fa-trash-alt"></i></div>
+        </article>
+      </div>
+
+      <article class="nav-dashboard-article dashboard-pipeline-article">
+        <p class="summary-p">SUMMARY</p>
+        <p>APPLICANTS</p>
+        <p>JOB BOARD</p>
+        <p class="minimize-p">INTERVIEWS</p>
+        <p class="minimize-p">ACTIVITY</p>
+        <p class="minimize-p">BROADCAST</p>
+        <p class="minimize-p">NOTIFICATIONS</p>
+        <p class="chevron-right"><i class="fas fa-chevron-circle-right"></i></p>
+      </article>
+    </nav>
+
+    <section class="chart-section">
+      <section class="circle-chart-wrapper">
+        <article>
+          <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="200" height="200">
+            <circle class="circle-chart__background" stroke="#DDE5EB" stroke-width="2" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+            <circle class="circle-chart__circle" stroke="#68B6C1" stroke-width="2" stroke-dasharray="80, 100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+            <g class="circle-chart__info">
+              <text class="circle-chart__percent" x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle" font-size="8">3,154</text>
+              <text class="circle-chart__subline" x="16.91549431" y="23" alignment-baseline="central" text-anchor="middle" font-size="3">APPLICANTS</text>
+            </g>
+          </svg>
+        </article>
+        <article>
+          <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="200" height="200" >
+            <circle class="circle-chart__background" stroke="#DDE5EB" stroke-width="2" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+            <circle class="circle-chart__circle" stroke="#48A3F0" stroke-width="2" stroke-dasharray="40, 100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+            <g class="circle-chart__info">
+              <text class="circle-chart__percent" x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle" font-size="8">1,564</text>
+              <text class="circle-chart__subline" x="16.91549431" y="23" alignment-baseline="central" text-anchor="middle" font-size="3">INTERVIEWS</text>
+            </g>
+          </svg>
+        </article>
+        <article>
+          <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="200" height="200" >
+            <circle class="circle-chart__background" stroke="#DDE5EB" stroke-width="2" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+            <circle class="circle-chart__circle" stroke="#A86EB2" stroke-width="2" stroke-dasharray="15, 100" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+            <g class="circle-chart__info">
+              <text class="circle-chart__percent" x="16.91549431" y="15.5" alignment-baseline="central" text-anchor="middle" font-size="8">912</text>
+              <text class="circle-chart__subline" x="16.91549431" y="23" alignment-baseline="central" text-anchor="middle" font-size="3">FORWARDS</text>
+            </g>
+          </svg>
+        </article>
+        <div class="totals-btn-div">
+          <p class="chart-btn totals-btn">TOTALS - Out of 5,312 views</p>
         </div>
-      </article>
-      <article class="model-article">
-          <p class="model-p">1969 Dodge Charger</p>
-          <p class="end-date">Ends 12/1/18 10:00pm</p>
-      </article>
-      <article class="description-article">
-        <div class="description-div">
-          <p class="description-p">View vehicle description, KBB value, Q&As</p>
+      </section>
+
+      <section class="bar-chart-section">
+        <div class="bar-chart-div">
+          
         </div>
-      </article>
-      <article class="location-article">
-          <p class="location-p">Location</p>
-          <p class="city-state-p">Gary, Indiana</p>
-      </article>
-      <article class="price-article">
-        <p>Current price</p>
-        <p class="price-p">$12,150</p>
-      </article>
+        <div class="applicants-btn-div">
+          <p class="chart-btn applicants-btn">APPLICANTS/DAY</p>
+        </div>
+      </section>
     </section>
 
-    <section class="box box2">
-      <article class="img-article img-article2">
-        <div class="bid-div">
-          <img class="bid-now-img" src="images/bid.png">
-          <div class="number-bids-div">
-            <p class="bids-p">BIDS</p>
-            <p class="number-bids-p">23</p>
-          </div>
-        </div>
-      </article>
-      <article class="model-article">
-          <p class="model-p">1971 Buick GSX</p>
-          <p class="end-date">Ends 1/13/19 12:00pm</p>
-      </article>
-      <article class="description-article">
-        <div class="description-div">
-          <p class="description-p">View vehicle description, KBB value, Q&As</p>
-        </div>
-      </article>
-      <article class="location-article">
-          <p class="location-p">Location</p>
-          <p class="city-state-p">Boulder, Colorado</p>
-      </article>
-      <article class="price-article">
-        <p>Current price</p>
-        <p class="price-p">$34,650</p>
-      </article>
-    </section>
- 
-   <section class="box box3">
-      <article class="img-article img-article3">
-        <div class="bid-div">
-          <img class="bid-now-img" src="images/bid.png">
-          <div class="number-bids-div">
-            <p class="bids-p">BIDS</p>
-            <p class="number-bids-p">01</p>
-          </div>
-        </div>
-      </article>
-      <article class="model-article">
-          <p class="model-p">1970 Ford Mustang</p>
-          <p class="end-date">Ends 1/9/19 9:00am</p>
-      </article>
-      <article class="description-article">
-        <div class="description-div">
-          <p class="description-p">View vehicle description, KBB value, Q&As</p>
-        </div>
-      </article>
-      <article class="location-article">
-          <p class="location-p">Location</p>
-          <p class="city-state-p">Denver, Colorado</p>
-      </article>
-      <article class="price-article">
-        <p>Current price</p>
-        <p class="price-p">$39,000</p>
-      </article>
-    </section>
+    <hr>
 
-      <section class="box box4">
-      <article class="img-article img-article4">
-        <div class="bid-div">
-          <img class="bid-now-img" src="images/bid.png">
-          <div class="number-bids-div">
-            <p class="bids-p">BIDS</p>
-            <p class="number-bids-p">91</p>
-          </div>
-        </div>
-      </article>
-      <article class="model-article">
-          <p class="model-p">1970 Chevrolet Chevelle</p>
-          <p class="end-date">Ends 1/1/18 12:00am</p>
-      </article>
-      <article class="description-article">
-        <div class="description-div">
-          <p class="description-p">View vehicle description, KBB value, Q&As</p>
-        </div>
-      </article>
-      <article class="location-article">
-          <p class="location-p">Location</p>
-          <p class="city-state-p">Los Angeles, California</p>
-      </article>
-      <article class="price-article">
-        <p>Current price</p>
-        <p class="price-p">$75,950</p>
-      </article>
-    </section>
 
-    <section class="box box5">
-      <article class="img-article img-article5">
-        <div class="bid-div">
-          <img class="bid-now-img" src="images/bid.png">
-          <div class="number-bids-div">
-            <p class="bids-p">BIDS</p>
-            <p class="number-bids-p">17</p>
-          </div>
-        </div>
-      </article>
-      <article class="model-article">
-          <p class="model-p">1969 Chevrolet Camaro</p>
-          <p class="end-date">Ends 12/15/18 1:00pm</p>
-      </article>
-      <article class="description-article">
-        <div class="description-div">
-          <p class="description-p">View vehicle description, KBB value, Q&As</p>
-        </div>
-      </article>
-      <article class="location-article">
-          <p class="location-p">Location</p>
-          <p class="city-state-p">Houston, Texas</p>
-      </article>
-      <article class="price-article">
-        <p>Current price</p>
-        <p class="price-p">$22,550</p>
-      </article>
-    </section>
+    <section class="bottom-section">
 
-    <section class="box box6">
-      <article class="img-article img-article6">
-        <div class="bid-div">
-          <img class="bid-now-img" src="images/bid.png">
-          <div class="number-bids-div">
-            <p class="bids-p">BIDS</p>
-            <p class="number-bids-p">52</p>
-          </div>
-        </div>
-      </article>
-      <article class="model-article">
-          <p class="model-p">1971 Plymouth Hemi Cuda</p>
-          <p class="end-date">Ends 2/13/19 12:00pm</p>
-      </article>
-      <article class="description-article">
-        <div class="description-div">
-          <p class="description-p">View vehicle description, KBB value, Q&As</p>
-        </div>
-      </article>
-      <article class="location-article">
-          <p class="location-p">Location</p>
-          <p class="city-state-p">Portland, Oregon</p>
-      </article>
-      <article class="price-article">
-        <p>Current price</p>
-        <p class="price-p">$79,400</p>
-      </article>
-    </section>
- 
-   <section class="box box7">
-      <article class="img-article img-article7">
-        <div class="bid-div">
-          <img class="bid-now-img" src="images/bid.png">
-          <div class="number-bids-div">
-            <p class="bids-p">BIDS</p>
-            <p class="number-bids-p">10</p>
-          </div>
-        </div>
-      </article>
-      <article class="model-article">
-          <p class="model-p">1964 Pontiac GTO</p>
-          <p class="end-date">Ends 1/31/19 9:00am</p>
-      </article>
-      <article class="description-article">
-        <div class="description-div">
-          <p class="description-p">View vehicle description, KBB value, Q&As</p>
-        </div>
-      </article>
-      <article class="location-article">
-          <p class="location-p">Location</p>
-          <p class="city-state-p">Climax, Michigan</p>
-      </article>
-      <article class="price-article">
-        <p>Current price</p>
-        <p class="price-p">$19,550</p>
-      </article>
-    </section>
+      <section class="job-details-section">
 
-      <section class="box box8">
-      <article class="img-article img-article8">
-        <div class="bid-div">
-          <img class="bid-now-img" src="images/bid.png">
-          <div class="number-bids-div">
-            <p class="bids-p">BIDS</p>
-            <p class="number-bids-p">04</p>
+        <article class="job-description-article">
+          <div class="garbage-div">
+            <div class="row-header-div">
+              JOB DESCRIPTION
+            </div>
+            <div class="row-details-div">
+              <button class="edit-btn"><i class="fas fa-pen edit-pen"></i>EDIT</button>
+            </div>
           </div>
-        </div>
-      </article>
-      <article class="model-article">
-          <p class="model-p">1968 Shelby Mustang GT500</p>
-          <p class="end-date">Ends 2/1/19 12:00am</p>
-      </article>
-      <article class="description-article">
-        <div class="description-div">
-          <p class="description-p">View vehicle description, KBB value, Q&As</p>
-        </div>
-      </article>
-      <article class="location-article">
-          <p class="location-p">Location</p>
-          <p class="city-state-p">Kalamazoo, Michigan</p>
-      </article>
-      <article class="price-article">
-        <p>Current price</p>
-        <p class="price-p">$12,150</p>
-      </article>
+        </article>
+
+        <article class="job-details-article">
+          <div class="garbage-div">
+            <div class="row-header-div">
+              POSITION TITLE
+            </div>
+            <div class="row-details-div">
+              Customer Service Representative
+            </div>
+          </div>
+        </article>
+        <article class="job-details-article">
+          <div class="garbage-div">
+            <div class="row-header-div">
+              LOCATION
+            </div>
+            <div class="row-details-div">
+              San Francisco, CA
+            </div>
+          </div>
+        </article>
+        <article class="job-details-article">
+          <div class="garbage-div">
+            <div class="row-header-div">
+              EMPLOYMENT TYPE
+            </div>
+            <div class="row-details-div">
+              Full-time
+            </div>
+          </div>
+        </article>
+        <article class="job-details-article">
+          <div class="garbage-div">
+            <div class="row-header-div">
+              EXPERIENCE
+            </div>
+            <div class="row-details-div">
+              Mid-level
+            </div>
+          </div>
+        </article>
+        <article class="job-details-article">
+          <div class="garbage-div">
+            <div class="row-header-div">
+              STATUS
+            </div>
+            <div class="row-details-div">
+              Open
+            </div>
+          </div>
+        </article>
+        <article class="job-details-article description-article">
+          <div class="garbage-div">
+            <div class="row-header-div description-header-div">
+              DESCRIPTION
+            </div>
+            <div class="row-details-div description-details-div">
+              Eat the rubberband stretch, or knock over christmas tree cereal boxes make for five star accommodation . Lick sellotape bathe private parts with tongue then lick owner's face, head nudges pee in human's bed until he cleans the litter box hit.
+            </div>
+          </div>
+        </article>
+        <article class="job-details-article">
+          <div class="garbage-div">
+            <div class="row-header-div">
+              HIRING LEAD
+            </div>
+            <div class="row-details-div hiring-lead-details">
+              <div class="img-div"></div>
+              Fred Rogers
+            </div>
+          </div>
+        </article>
+        <article class="job-details-article">
+          <div class="garbage-div salary-div">
+            <div class="row-header-div">
+              APPROVED SALARY
+            </div>
+            <div class="row-details-div salary">
+              $75,000
+            </div>
+          </div>
+        </article>
+      </section>
+
+
+
+      <section class="social-media-section">
+        <section class="social-media-btns">
+          <article>
+            <div class="fb-btn">
+              <i class="fab fa-facebook-f"></i>
+              <p>Post to Facebook</p>
+            </div>
+          </article>
+          <article>
+            <div class="twitter-btn">
+              <i class="fab fa-twitter"></i>
+              <p>Post to Twitter</p>
+            </div>
+          </article>
+          <article>
+            <div class="linkedin-btn">
+              <i class="fab fa-linkedin"></i>
+              <p>Post to LinkedIn</p>
+            </div>
+          </article>
+        </section>
+        
+
+        <section class="media-linking-section">
+          <article class="media-linking-article">
+            <p class="header-p"><i class="fas fa-globe-africa"></i> Link to this job</p>
+            <p class="description-p">You can automatically upload multiple resumes to this job by emailing the address below.</p>
+            <div>
+              <p class="link-p">https://www.careerbuilde...</p>
+              <button>Copy</button>
+            </div>
+          </article>
+
+          <article class="media-linking-article">
+            <p class="header-p"><i class="fas fa-link"></i> Use this Button Widget</p>
+            <p class="description-p">This widget embeds the buttons for sharing the job for submitting a resume on your website.</p>
+            <div>
+              <p class="link-p"><"script embed"https://go...</p>
+              <button>Copy</button>
+            </div>
+          </article>
+
+          <article class="media-linking-article email-article">
+            <p class="header-p"><i class="fab fa-telegram-plane"></i> Upload Resumes by Email</p>
+            <p class="description-p">You can automatically upload multiple resumes to this job by emailing the address below.</p>
+            <div>
+              <p class="link-p email-p">FredRogers@gmail.com</p>
+            </div>
+          </article>
+
+        </section>
+      </section>
+      
+
+
+
     </section>
   </main>
-  <p class="copyright">&copy2018</p>
-
-
 
 </body>
 </html>
